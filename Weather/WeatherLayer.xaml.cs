@@ -26,7 +26,7 @@ namespace Weather
         private void BuildDrops()
         {
             Random r = new Random();
-            for (int i = 0; i < Config.Strenght * 5; i++)
+            for (int i = 0; i < Config.Strength * 5; i++)
             {
                 Drops.Add(new WeatherItem(Config, r.Next(Config.ScreenWidth), r.Next(Config.ScreenHeight)));
             }

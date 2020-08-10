@@ -24,13 +24,13 @@ namespace Weather
                 NotifyPropertyChanged(nameof(Mode));
             }
         }
-        public int Strenght
+        public int Strength
         {
             get { return _strength; }
             set
             {
                 _strength = value;
-                NotifyPropertyChanged(nameof(Strenght));
+                NotifyPropertyChanged(nameof(Strength));
             }
         }
         public int Weight
@@ -52,10 +52,10 @@ namespace Weather
             }
         }
         public bool IsRunning { get; set; } = true;
-        public Settings(WeatherMode mode = WeatherMode.Rain, int wind = 5, int strenght = 50, int weight = 50, int screenHeight = 1200, int screenWidth = 1920)
+        public Settings(WeatherMode mode = WeatherMode.Rain, int wind = 1, int strength = 50, int weight = 50, int screenHeight = 1200, int screenWidth = 1920)
         {
             Mode = mode;
-            Strenght = strenght;
+            Strength = strength;
             Weight = weight;
             Wind = wind;
             ScreenHeight = screenHeight;
